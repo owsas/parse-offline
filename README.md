@@ -10,9 +10,9 @@ When you develop applications with Parse, you constantly need to fetch the infor
 
 With this addon for the Parse JS SDK, you can:
 
-* [ ] Save query results in the `localStorage` for any class. With this, given a query, you could fetch its results and save them in the `localStorage` for later usage.
+* [x] Save query results in the `localStorage` for any class. With this, given a query, you could fetch its results and save them in the `localStorage` for later usage.
 
-* [ ] Have a synced cache for your results in the `localStorage` for any class. So everytime you make a request, you can keep a local cache of the results, and display them when your app goes offline.
+* [x] Have a synced cache for your results in the `localStorage` for any class. So everytime you make a request, you can keep a local cache of the results, and display them when your app goes offline.
 
 * [ ] Save in the Service Worker cache images from the results.
 
