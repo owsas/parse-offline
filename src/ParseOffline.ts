@@ -133,6 +133,9 @@ export class ParseOffline {
     });
   }
 
+  /**
+   * Tests if results are still valid
+   */
   static areCachedResultsValid(
     cachedResults: CachedResults, maxAge: number,
   ): boolean {
