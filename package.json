@@ -1,5 +1,5 @@
 {
-  "name": "parse-offline",
+  "name": "@owsas/parse-offline",
   "version": "1.0.0",
   "description": "Parse JS SDK Addons for handling offline for PWAs",
   "main": "out/index.js",
@@ -47,14 +47,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/owsas/typescript-module-template.git"
+    "url": "git+https://github.com/owsas/parse-offline.git"
   },
   "bugs": {
-    "url": "https://github.com/owsas/typescript-module-template/issues"
+    "url": "https://github.com/owsas/parse-offline.git/issues"
   },
-  "homepage": "https://github.com/owsas/typescript-module-template#readme",
+  "homepage": "https://github.com/owsas/parse-offline.git#readme",
   "peerDependencies": {
     "@types/parse": "^2.4.4",
     "parse": "^1.11.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }
