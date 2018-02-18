@@ -1,6 +1,6 @@
 import * as Parse from 'parse';
 
-export default class CachedResults {
+export class CachedResults {
   createdAt: Date;
   results: any[];
 
