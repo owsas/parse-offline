@@ -1,5 +1,5 @@
 {
-  "name": "@owsas/parse-offline",
+  "name": "parse-offline",
   "version": "1.0.0",
   "description": "Parse JS SDK Addons for handling offline for PWAs",
   "main": "out/index.js",
