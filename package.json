@@ -1,6 +1,6 @@
 {
   "name": "parse-offline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse JS SDK Addons for handling offline for PWAs",
   "main": "out/index.js",
   "scripts": {
