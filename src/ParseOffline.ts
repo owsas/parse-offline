@@ -141,4 +141,17 @@ export class ParseOffline {
   ): boolean {
     return cachedResults.createdAt.getTime() > (new Date().getTime() - maxAge);
   }
+
+
+  /**
+   * Saves an image with the given url
+   * @param imgUrl 
+   */
+  static saveImageToCache(imgUrl: string, worker: Worker): Promise<any> {
+    return new Promise((resolve, reject) => {
+      worker.postMessage(imgUrl);
+      worker.onmessage = resolve;
+      worker.onerror = reject;
+    });
+  }
 }
