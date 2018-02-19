@@ -4,20 +4,8 @@ export class CachedResults {
   createdAt: Date;
   results: any[];
 
-  constructor(objs: Parse.Object[], createdAt?: Date) {
-    this.createdAt = createdAt || new Date();
-    this.results = objs.map(o => o.toJSON());
-  }
-
-  toJSON(): any {
-    return {
-      createdAt: this.createdAt,
-      resuts: this.results,
-    };
-  }
-
-  toParseObjs(className: string): Parse.Object[] {
-    return this.results.map((obj) => {
+  static toParseObjs(className: string, results: any[]): Parse.Object[] {
+    return results.map((obj) => {
       const jsonReadyToBeConverted = {
         className,
         ...obj,
@@ -28,9 +16,28 @@ export class CachedResults {
     });
   }
 
+  constructor(objs: Parse.Object[], createdAt?: Date) {
+    this.createdAt = createdAt || new Date();
+    this.results = objs.map(o => o.toJSON());
+  }
+
+  toParseObjs(className: string) {
+    return CachedResults.toParseObjs(className, this.results);
+  }
+
+  toJSON(): any {
+    return {
+      createdAt: this.createdAt,
+      results: this.results,
+    };
+  }
+
   static fromJSON(
     json: { createdAt: Date, results: any[] },
   ): CachedResults {
-    return new CachedResults(json.results, json.createdAt);
+    const { createdAt, results } = json;
+    const c = new CachedResults([], createdAt);
+    c.results = results;
+    return c;
   }
 }
