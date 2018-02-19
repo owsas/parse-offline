@@ -15,8 +15,7 @@ export class ParseOffline {
    * Nowadays, localStorage is widely supported
    * https://caniuse.com/#search=localStorage
    * 
-   * @param query 
-   * @param localStorageKey 
+   * @param params 
    */
   static async saveResultsToLocalStorage(params:{
     query: Parse.Query,
@@ -44,7 +43,7 @@ export class ParseOffline {
 
   /**
    * Given a query, gets the results
-   * @param query 
+   * @param params 
    */
   static getResultsFromTheLocalStorage(params: {
     className: string,
@@ -70,7 +69,7 @@ export class ParseOffline {
   /**
    * Returns the key to be used for saving the results 
    * of a given query to the localStorage
-   * @param query 
+   * @param className 
    */
   static getLocalStorageKeyForClassName(className: string): string {
     return `_cache_${className}`;
@@ -94,7 +93,7 @@ export class ParseOffline {
    * to give you back the results that were cached 
    * in the localStorage
    * 
-   * @param query 
+   * @param params 
    */
   static async findWithFallbackAndCache(params: {
     query: Parse.Query,
