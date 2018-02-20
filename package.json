@@ -13,7 +13,7 @@
   "author": "Juan Camilo Guarín P",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "21.1.4",
+    "@types/jest": "21.1.10",
     "@types/parse": "2.4.4",
     "jest": "21.2.1",
     "parse": "1.11.0",
