@@ -28,9 +28,9 @@
   version "9.4.6"
   resolved "https://registry.npmjs.org/@types/node/-/node-9.4.6.tgz#d8176d864ee48753d053783e4e463aec86b8d82e"
 
-"@types/parse@2.4.4":
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/@types/parse/-/parse-2.4.4.tgz#6a62f46546fcbe181c6b4a812c6df64817b7b990"
+"@types/parse@2.4.7":
+  version "2.4.7"
+  resolved "https://registry.yarnpkg.com/@types/parse/-/parse-2.4.7.tgz#f1c69f8d340d7ea72e74ed2d8ffa1d027f52c0cd"
   dependencies:
     "@types/jquery" "*"
     "@types/node" "*"
