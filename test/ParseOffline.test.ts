@@ -1,6 +1,7 @@
 import * as Parse from 'parse/node';
 import { ParseOffline } from '../src/ParseOffline';
 import { CachedResults } from '../src/CachedResults';
+import * as moment from 'moment';
 
 const obj = new Parse.Object('Test');
 obj.set('testKey', 1);
@@ -83,4 +84,17 @@ describe('#getResultsFromTheLocalStorage', () => {
 
          expect(results.results).toEqual([]);
        });
+});
+
+describe('#areCachedResultsValid', () => {
+  test('should say results are not valid', () => {
+    const results = new CachedResults([], moment().subtract(3, 'day').toDate());
+    expect(ParseOffline.areCachedResultsValid(results, 3000)).toBe(false);
+  });
+
+  test('should say results are valid', () => {
+    const ONE_WEEK = 1000 * 60 * 60 * 24 * 7;
+    const results = new CachedResults([], moment().toDate());
+    expect(ParseOffline.areCachedResultsValid(results, ONE_WEEK)).toBe(true);
+  });
 });

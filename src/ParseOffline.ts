@@ -134,6 +134,8 @@ export class ParseOffline {
 
   /**
    * Tests if results are still valid
+   * @param cachedResults A CachedResults object
+   * @param maxAge The maximum age of the results in milliseconds
    */
   static areCachedResultsValid(
     cachedResults: CachedResults, maxAge: number,
@@ -144,13 +146,14 @@ export class ParseOffline {
 
   /**
    * Saves an image with the given url
-   * @param imgUrl 
+   * @param imgUrl The url of the image to save
+   * @param worker A previously created service worker in your app
    */
-  static saveImageToCache(imgUrl: string, worker: Worker): Promise<any> {
+  /* static saveImageToCache(imgUrl: string, worker: Worker): Promise<any> {
     return new Promise((resolve, reject) => {
       worker.postMessage(imgUrl);
       worker.onmessage = resolve;
       worker.onerror = reject;
     });
-  }
+  } */
 }
