@@ -2,6 +2,8 @@
 
 Parse JS SDK Addons for handling offline for PWAs
 
+Bonus: No external dependencies
+
 ## The problem
 
 When you develop applications with Parse, you constantly need to fetch the information from the remote server, affecting the offline experience.
