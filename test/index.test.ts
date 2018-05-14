@@ -1,5 +1,9 @@
-import { MyModule } from '../src/index';
+import { CachedResults, ParseOffline } from '../src/index';
 
-test('test', () => {
-  expect(true).toBe(true);
+test('CachedResults', () => {
+  expect(CachedResults).toBeTruthy();
+});
+
+test('ParseOffline', () => {
+  expect(ParseOffline).toBeTruthy();
 });
