@@ -17,7 +17,7 @@
     "@types/jest": "22.2.2",
     "@types/parse": "2.4.7",
     "jest": "23.6.0",
-    "moment": "2.22.0",
+    "moment": "2.29.1",
     "parse": "1.11.0",
     "ts-jest": "21.2.4",
     "tslint": "5.11.0",
