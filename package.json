@@ -56,7 +56,7 @@
   "homepage": "https://github.com/owsas/parse-offline.git#readme",
   "peerDependencies": {
     "@types/parse": "^2.4.4",
-    "parse": "^1.11.0"
+    "parse": "^1.11.0 || ^4.0.0"
   },
   "directories": {
     "test": "test"
