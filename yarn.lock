@@ -20,25 +20,16 @@
   version "22.2.2"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-22.2.2.tgz#afe5dacbd00d65325f52da0ed3e76e259629ac9d"
 
-"@types/jquery@*":
-  version "3.3.0"
-  resolved "https://registry.npmjs.org/@types/jquery/-/jquery-3.3.0.tgz#6316ac20a1a13c5d521a2dc661befc7184f73f5b"
-
 "@types/node@*":
   version "9.4.6"
   resolved "https://registry.npmjs.org/@types/node/-/node-9.4.6.tgz#d8176d864ee48753d053783e4e463aec86b8d82e"
 
-"@types/parse@2.4.7":
-  version "2.4.7"
-  resolved "https://registry.yarnpkg.com/@types/parse/-/parse-2.4.7.tgz#f1c69f8d340d7ea72e74ed2d8ffa1d027f52c0cd"
+"@types/parse@3.0.9":
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/@types/parse/-/parse-3.0.9.tgz#eb377ebd287b8d1dcd805a4c2c111f27ab5a9906"
+  integrity sha512-DGTHygc7krgmNAK8h42giwmAofCd9uv2++RD+zw6OmWI7AEnlTYZwEuWsx22SA2CSMQrZW8P2INHLpQbnQFUng==
   dependencies:
-    "@types/jquery" "*"
     "@types/node" "*"
-    "@types/underscore" "*"
-
-"@types/underscore@*":
-  version "1.8.7"
-  resolved "https://registry.npmjs.org/@types/underscore/-/underscore-1.8.7.tgz#5e4fe5d18376647fb8a1fe33f8ded0d8ccfa783c"
 
 abab@^1.0.3, abab@^1.0.4:
   version "1.0.4"
